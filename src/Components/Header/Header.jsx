@@ -2,7 +2,8 @@ import styled from "styled-components";
 import logo from "../../assets/Img/astronaut.svg";
 import Button from "../Button/Button";
 import { GoRocket } from "react-icons/go";
-
+import { FaRocket, FaUserAstronaut } from "react-icons/fa";
+import MilkyWay from "../../assets/Img/milkiyway1.png";
 function Header() {
   return (
     <HeaderStyled>
@@ -30,13 +31,25 @@ function Header() {
       </nav>
       <div className="header-content">
         <div>
-          <h1 style={{ fontFamily: 'Abril Fatface, cursive' }}>
-            Explore the Milky way 
+          <h1 style={{ fontFamily: "Abril Fatface, cursive" }}>
+            Explore the Milky way
           </h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero ad quas delectus aspernatur. Laudantium labore autem deleniti quos maiores eligendi consectetur, repellendus nobis vitae ducimus ratione itaque ad quis earum?
-          </p>
-          <div className="buttons"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla</p>
+          <div className="buttons">
+            <Button
+              name="Get Started"
+              background="#f2994a"
+              color="#fff"
+              border="1px solid #f2994a"
+              icon={<FaUserAstronaut />}
+            />
+            <Button name="Learn More" />
+          </div>
+        </div>
+        <div className="image-content">
+          <div>
+            <img src={MilkyWay} width={600} height={600} alt="hero" />
+          </div>
         </div>
       </div>
     </HeaderStyled>
