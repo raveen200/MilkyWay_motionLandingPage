@@ -1,22 +1,17 @@
 const footer = [
   {
-    title: "My Account",
+    title: "Developer",
     links: [
       {
-        name: "Profile",
-        link: "/profile",
-      },
-      {
-        name: "Settings",
-        link: "/settings",
-      },
-      {
-        name: "Logout",
-        link: "/logout",
-      },
-      {
-        name: "Help",
+        name: "Portfolio",
         link: "/help",
+        href : "https://www.google.com"
+      },
+      {
+        name: "Linkedin",
+      },
+      {
+        name: "GitHub",
       },
     ],
   },

@@ -19,7 +19,7 @@ function Header() {
       <nav>
         <div className="logo">
           <img src={logo} alt="logo" width={42} />
-          <h2>Logo</h2>
+          <h2>Our Galaxy</h2>
         </div>
         <div className="input">
           <input type="text" placeholder="Search..." />

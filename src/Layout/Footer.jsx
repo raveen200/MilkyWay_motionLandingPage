@@ -16,15 +16,15 @@ function Footer() {
         <div className="logo-con">
           <div className="logo">
             <img src={logo} width={36} alt="logo" />
-            <h2>Logo</h2>
+            <h2>Our Galaxy</h2>
           </div>
           <div className="input">
-            <input type="text" placeholder="Subscribe here..." />
+            <input type="text" placeholder="Join with Us..." />
             <button>&#8594;</button>
           </div>
           <p>
-            Create, Sell And Collect Truly Rare Digital Artworks. Powered By
-            Blockchain Technology.
+            Join our community and stay updated with the latest news and events
+            from Our Galaxy. Let&apos;s explore the universe together!
           </p>
           <div className="socials">
             <AiFillGithub />
@@ -43,7 +43,8 @@ function Footer() {
                   {item.links.map((text, index) => {
                     return (
                       <li key={index}>
-                        <a href="">{text.name}</a>
+                        <a href={text.href}>{text.name}</a>
+
                       </li>
                     );
                   })}
