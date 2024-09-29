@@ -12,7 +12,6 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 function App() {
-
   const video = useRef(null);
   const { scrollYProgress } = useScroll({
     target: video,
@@ -64,10 +63,12 @@ function App() {
             </div>
           </HorizontalWrapper>
         </SectionLayout>
-       
+        <SectionLayout>
+          <TextSection />
+        </SectionLayout>
 
         <SectionLayout>
-        <motion.div
+          <motion.div
             className="video"
             ref={video}
             style={{
@@ -85,16 +86,13 @@ function App() {
         </SectionLayout>
 
         <SectionLayout>
-          <TextSection />
-        </SectionLayout>
-
-        <SectionLayout>
           <ZoomSection />
         </SectionLayout>
 
         <SectionLayout>
           <TextSection />
         </SectionLayout>
+
         <Footer />
       </MainStyle>
       ;
