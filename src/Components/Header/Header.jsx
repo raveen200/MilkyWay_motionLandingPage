@@ -62,7 +62,7 @@ function Header() {
               transition: hoverHero.transition,
             }}
           >
-            <img src={MilkyWay} width={800} alt="hero"
+            <img src={MilkyWay} width={600} alt="hero"
             style={{transform: imageHover.transform}}
             />
           </div>
