@@ -2,11 +2,18 @@ import styled from "styled-components";
 import logo from "../../assets/Img/astronaut.svg";
 import Button from "../Button/Button";
 import { GoRocket } from "react-icons/go";
-import { FaRocket, FaUserAstronaut } from "react-icons/fa";
+import { FaUserAstronaut } from "react-icons/fa";
 import MilkyWay from "../../assets/Img/milkiyway1.png";
+
+import { useRef } from "react";
+import Hover3d from "../../utils/hover";
+
 function Header() {
+  const hero = useRef(null);
+  const hoverHero = Hover3d(hero, { x: 30, y: -40, z: 30 });
+
   return (
-    <HeaderStyled>
+    <HeaderStyled ref={hero}>
       <nav>
         <div className="logo">
           <img src={logo} alt="logo" width={42} />
@@ -25,12 +32,11 @@ function Header() {
           <li>
             <a href="/">Services</a>
           </li>
-
           <Button name="Contact" icon={<GoRocket />} />
         </ul>
       </nav>
       <div className="header-content">
-        <div>
+        <div className="text-content">
           <h1 style={{ fontFamily: "Abril Fatface, cursive" }}>
             Explore the Milky way
           </h1>
@@ -47,7 +53,13 @@ function Header() {
           </div>
         </div>
         <div className="image-content">
-          <div>
+          <div
+            className="image"
+            style={{
+              transform: hoverHero.transform,
+              transition: hoverHero.transition,
+            }}
+          >
             <img src={MilkyWay} width={600} height={600} alt="hero" />
           </div>
         </div>
@@ -136,7 +148,6 @@ const HeaderStyled = styled.header`
       padding: 1rem;
       border-radius: 8px;
       background-color: var(--color-bg);
-      border: 1px solid var(--color-border);
 
       img {
         border-radius: 8px;
