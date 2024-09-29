@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import hover3d from "../utils/hover";
 import styled from "styled-components";
-import Galaxy from "../assets/Img/Galaxy.png";
+import Galaxy from "../assets/Img/galaxy.png";
 import Moon from "../assets/Img/moon.png";
 import Sun from "../assets/Img/sun.png";
 
