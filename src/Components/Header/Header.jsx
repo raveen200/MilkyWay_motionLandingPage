@@ -12,6 +12,8 @@ function Header() {
   const hero = useRef(null);
   const hoverHero = Hover3d(hero, { x: 30, y: -40, z: 30 });
 
+  const imageHover = Hover3d(hero, { x: 20, y: -5, z: 11 });
+
   return (
     <HeaderStyled ref={hero}>
       <nav>
@@ -60,7 +62,9 @@ function Header() {
               transition: hoverHero.transition,
             }}
           >
-            <img src={MilkyWay} width={600} height={600} alt="hero" />
+            <img src={MilkyWay} width={800} alt="hero"
+            style={{transform: imageHover.transform}}
+            />
           </div>
         </div>
       </div>
