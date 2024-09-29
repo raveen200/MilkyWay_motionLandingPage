@@ -1,17 +1,18 @@
 import styled from "styled-components";
 import logo from "../../assets/Img/astronaut.svg";
 import Button from "../Button/Button";
+import { GoRocket } from "react-icons/go";
 
 function Header() {
   return (
     <HeaderStyled>
       <nav>
         <div className="logo">
-          <img src={logo} alt="logo" width={128} height={77} />
+          <img src={logo} alt="logo" width={42} />
           <h2>Logo</h2>
         </div>
         <div className="input">
-            <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Search..." />
         </div>
         <ul className="nav-items">
           <li>
@@ -23,18 +24,29 @@ function Header() {
           <li>
             <a href="/">Services</a>
           </li>
-          <li>
-            <a href="/">Contact</a>
-          </li>
-          <Button />
+
+          <Button name="Contact" icon={<GoRocket />} />
         </ul>
       </nav>
+      <div className="header-content">
+        <div>
+          <h1 style={{ fontFamily: 'Abril Fatface, cursive' }}>
+            Explore the Milky way 
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero ad quas delectus aspernatur. Laudantium labore autem deleniti quos maiores eligendi consectetur, repellendus nobis vitae ducimus ratione itaque ad quis earum?
+          </p>
+          <div className="buttons"></div>
+        </div>
+      </div>
     </HeaderStyled>
   );
 }
 
 const HeaderStyled = styled.header`
+  @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
   nav {
+    margin-top: 0.5rem;
     padding: 0 4rem;
     min-height: 10vh;
     border-bottom: 1px solid var(--color-border);
@@ -128,6 +140,8 @@ const HeaderStyled = styled.header`
       .input {
         width: 100%;
         justify-content: flex-start;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
 
         input {
           width: 100%;
