@@ -8,8 +8,6 @@ import TextSection from "./Components/TextSection";
 import Footer from "./Layout/Footer";
 import ZoomSection from "./Components/ZoomSection";
 import HorizontalWrapper from "./Components/HorizontalWrapper";
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
 import VideoSection from "./Components/VideoSection";
 
 function App() {
@@ -58,7 +56,7 @@ function App() {
         <SectionLayout>
           <VideoSection />
         </SectionLayout>
-        
+
         <SectionLayout>
           <TextSection />
         </SectionLayout>

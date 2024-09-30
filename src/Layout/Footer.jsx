@@ -2,11 +2,11 @@ import styled from "styled-components";
 import logo from "../assets/Img/astronaut.svg";
 import {
   AiFillGithub,
-  AiFillInstagram,
+
   AiFillLinkedin,
-  AiFillTwitterCircle,
+
 } from "react-icons/ai";
-import { BsDiscord } from "react-icons/bs";
+
 import footer from "../utils/footerData";
 
 function Footer() {
