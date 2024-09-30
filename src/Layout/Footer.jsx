@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import logo from "../assets/Img/astronaut.svg";
-import {
-  AiFillGithub,
-
-  AiFillLinkedin,
-
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import footer from "../utils/footerData";
 

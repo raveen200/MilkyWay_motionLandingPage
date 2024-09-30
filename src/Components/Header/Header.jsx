@@ -42,7 +42,12 @@ function Header() {
           <h1 style={{ fontFamily: "Abril Fatface, cursive" }}>
             Explore the Milky way
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla</p>
+          <p>
+            Embark on an extraordinary journey through the Milky Way. Discover
+            the wonders of our galaxy, from the shimmering stars to the
+            mysterious black holes. Join us as we explore the vastness of space
+            and uncover the secrets of the universe.
+          </p>
           <div className="buttons">
             <Button
               name="Get Started"
@@ -62,8 +67,11 @@ function Header() {
               transition: hoverHero.transition,
             }}
           >
-            <img src={MilkyWay} width={600} alt="hero"
-            style={{transform: imageHover.transform}}
+            <img
+              src={MilkyWay}
+              width={600}
+              alt="hero"
+              style={{ transform: imageHover.transform }}
             />
           </div>
         </div>

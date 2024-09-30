@@ -36,25 +36,29 @@ function TextSection() {
   return (
     <TextSectionStyled>
       <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        The Milky Way galaxy is home to over 100 billion stars.
       </TextWrapper>
       <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        Black holes are regions of space where gravity is so strong that nothing
+        can escape.
       </TextWrapper>
       <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        The speed of light is approximately 299,792 kilometers per second.
       </TextWrapper>
       <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        Our solar system consists of the Sun, eight planets, and various other
+        celestial objects.
       </TextWrapper>
       <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        The Hubble Space Telescope has provided some of the most detailed images
+        of distant galaxies.
       </TextWrapper>
       <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        Dark matter makes up about 27% of the universe&apos;s mass and energy.
       </TextWrapper>
       <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
+        The Big Bang theory is the leading explanation for the origin of the
+        universe.
       </TextWrapper>
     </TextSectionStyled>
   );
