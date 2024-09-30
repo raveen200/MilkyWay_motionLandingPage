@@ -27,11 +27,13 @@ function Footer() {
             from Our Galaxy. Let&apos;s explore the universe together!
           </p>
           <div className="socials">
-            <AiFillGithub />
-            <AiFillTwitterCircle />
-            <AiFillInstagram />
-            <BsDiscord />
-            <AiFillLinkedin />
+            <a href="https://github.com/raveen200" target="_blank">
+              <AiFillGithub />
+            </a>
+
+            <a href="https://www.linkedin.com/in/raveen200/" target="_blank">
+              <AiFillLinkedin />
+            </a>
           </div>
         </div>
         <div className="links">
@@ -44,7 +46,6 @@ function Footer() {
                     return (
                       <li key={index}>
                         <a href={text.href}>{text.name}</a>
-
                       </li>
                     );
                   })}
@@ -55,7 +56,7 @@ function Footer() {
         </div>
       </nav>
       <p className="rights">
-        <a href="">©2023 The Code Dealer. All rights reserved.</a>
+        <a href="">©2024. All rights reserved.</a>
         <a href="">Privacy policy | Terms of service</a>
       </p>
     </FooterStyled>

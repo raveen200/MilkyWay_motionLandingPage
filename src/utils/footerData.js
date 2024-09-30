@@ -4,14 +4,15 @@ const footer = [
     links: [
       {
         name: "Portfolio",
-        link: "/help",
-        href : "https://www.google.com"
+        href : "https://raveensamudika.netlify.app/"
       },
       {
         name: "Linkedin",
+        href : "https://www.linkedin.com/in/raveen200/"
       },
       {
         name: "GitHub",
+        href : "https://github.com/raveen200/"
       },
     ],
   },
@@ -19,50 +20,27 @@ const footer = [
     title: "Resources",
     links: [
       {
-        name: "Help Center",
-        link: "/help",
+        name: "NASA",
+      
+        href : "https://science.nasa.gov/resource/the-milky-way-galaxy/"
       },
-      {
-        name: "My Activities",
-        link: "/activities",
-      },
-      {
-        name: "Collections",
-        link: "/collections",
-      },
-      {
-        name: "My Collaborations",
-        link: "/collaborations",
-      },
+      
     ],
   },
   {
     title: "Useful Links",
     links: [
       {
-        name: "All NFTs",
-        link: "/nfts",
+        name: "Wiki",
+    
+        href : "https://en.wikipedia.org/wiki/Milky_Way"
       },
       {
-        name: "How to Sell",
-        link: "/sell",
+        name: "Britannica",
+       href : "https://www.britannica.com/place/Milky-Way-Galaxy"
       },
-      {
-        name: "Create",
-        link: "/create",
-      },
-      {
-        name: "Explore",
-        link: "/explore",
-      },
-      {
-        name: "Marketplace",
-        link: "/marketplace",
-      },
-      {
-        name: "Privacy & Policy",
-        link: "/privacy",
-      },
+   
+    
     ],
   },
 ];
